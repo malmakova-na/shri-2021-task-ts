@@ -3,7 +3,7 @@ import { contrast, fontColors } from './model';
 import { Colors } from './types';
 
 
-const identity = <T>(arg: T): T => arg; 
+
 console.log('colors:');
 console.log(style('red text', { font: 'red' }));
 console.log(style('green text', { font: 'green' }));
@@ -15,7 +15,7 @@ console.log(
     Array.from('Message of all colors')
         .map((char: string, i) => {
             const font = colorList[i % colorList.length];
-            return style(char, { font, background: contrast[font] });
+            return style(char, {font, background: contrast[font] });//colors
         })
         .join(''),
 );

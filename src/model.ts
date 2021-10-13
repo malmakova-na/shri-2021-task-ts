@@ -8,7 +8,7 @@ export const effects: {[key in Effects]: string} = {
     underscore: '\x1b[4m',
     blink: '\x1b[5m',
 };
-export const fontColors: {[key in string]: string} = {
+export const fontColors: {[key in Colors]: string} = {
     black: '\x1b[30m',
     red: '\x1b[31m',
     green: '\x1b[32m',
@@ -18,7 +18,7 @@ export const fontColors: {[key in string]: string} = {
     cyan: '\x1b[36m',
     white: '\x1b[37m',
 };
-export const backgroundColors: {[key in string]: string} = {
+export const backgroundColors: {[key in Colors]: string} = {
     black: '\x1b[40m',
     red: '\x1b[41m',
     green: '\x1b[42m',
@@ -28,7 +28,7 @@ export const backgroundColors: {[key in string]: string} = {
     cyan: '\x1b[46m',
     white: '\x1b[47m',
 };
-export const contrast: {[key in string]: Contrasts} = {
+export const contrast: {[key in Colors]: Contrasts} = {
     black: 'white',
     red: 'black',
     green: 'black',

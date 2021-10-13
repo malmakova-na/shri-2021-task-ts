@@ -1,10 +1,10 @@
 import { backgroundColors, effects, fontColors, Reset } from './model';
 import {Colors, Effects, Options} from './types';
-function addColor(text: string, color: string, isBackground = false) {
+function addColor(text: string, color: Colors, isBackground = false) {
     if (isBackground) {
         return text + backgroundColors[color];
     }
-    return text + fontColors[color];
+    return text + fontColors[color];//sting
 }
 function getEffects(effectList: [Effects]) {
     return effectList.map(effect => effects[effect]).join('');
